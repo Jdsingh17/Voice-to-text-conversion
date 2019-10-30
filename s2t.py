@@ -3,18 +3,15 @@
 #1. PyAudio (conda install PyAudio)
 #2. googleAPIpython (conda install -c conda-forge google-api-python-client)
 #3. speech_recognition (conda install SpeechRecognition)
-def abk():
-    import speech_recognition as sr
-    rec=sr.Recognizer()
-    with sr.Microphone as source:
-        print("bol bosdk")
-        audio = r.listen(source)
-        try:
-            #passing it to googleAPI
-            txt = r.recognize_google(audio)
-            arr=[str(_) for _ in txt.split()]
-            return arr
-        except:
-            print("firse bol bosdk")
-           
-abk()
+import speech_recognition as sr
+rec=sr.Recognizer()
+with sr.Microphone as source:
+print("bol bosdk")
+audio = r.listen(source)
+    try:
+        #passing it to googleAPI
+        txt = r.recognize_google(audio)
+        arr=[str(_) for _ in txt.split()]
+        return arr
+    except:
+        print("firse bol bosdk")
