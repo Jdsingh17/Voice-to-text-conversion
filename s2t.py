@@ -6,12 +6,12 @@
 import speech_recognition as sr
 rec=sr.Recognizer()
 with sr.Microphone as source:
-print("bol bosdk")
-audio = r.listen(source)
-    try:
-        #passing it to googleAPI
-        txt = r.recognize_google(audio)
-        arr=[str(_) for _ in txt.split()]
-        return arr
-    except:
-        print("firse bol bosdk")
+	print("bol bosdk")
+	audio = r.listen(source)
+try:
+	#passing it to googleA
+	txt = r.recognize_google(audio)
+	arr=[str(_) for _ in txt.split()]
+	return arr
+except:
+	print("firse bol bosdk")
