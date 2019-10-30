@@ -12,6 +12,6 @@ try:
 	#passing it to googleA
 	txt = r.recognize_google(audio)
 	arr=[str(_) for _ in txt.split()]
-	return arr
+	print arr
 except:
 	print("firse bol bosdk")
