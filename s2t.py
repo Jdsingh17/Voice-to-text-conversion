@@ -16,4 +16,5 @@ def abk():
             return arr
         except:
             print("firse bol bosdk")
-def()
+           
+abk()
