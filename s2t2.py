@@ -3,7 +3,7 @@ Created on 30-10-2019
 @author : lucifer
 Instructions
 -----------------
-1. pip install SpeechRecognition
+1. sudo pip install SpeechRecognition
 2. sudo apt-get install pyaudio
 '''
 
@@ -24,6 +24,7 @@ r = sr.Recognizer()
 
 with sr.Microphone() as source:
 	print("Ayy Bolo Naa : ")
+	r.adjust_for_ambient_noise(souce, duration=5)
 	audio = r.listen(source)
 
 	try:
