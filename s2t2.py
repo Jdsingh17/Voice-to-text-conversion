@@ -24,7 +24,7 @@ r = sr.Recognizer()
 
 with sr.Microphone() as source:
 	print("Ayy Bolo Naa : ")
-	r.adjust_for_ambient_noise(souce, duration=5)
+	r.adjust_for_ambient_noise(source, duration=5)
 	audio = r.listen(source)
 
 	try:
