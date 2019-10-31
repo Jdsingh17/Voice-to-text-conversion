@@ -17,12 +17,14 @@ def LedBlinkABK():
 	while True:
 		GPIO.output(8,GPIO.HIGH)
 		sleep(1)
+		print("ON ABK")
 		GPIO.output(8,GPIO.LOW)
 		sleep(1)
+		print("OFF ABK")
 
 r = sr.Recognizer()
 
-with sr.Microphone() as source:
+with sr.Microphone(device_index=2) as source:
 	print("Ayy Bolo Naa : ")
 	r.adjust_for_ambient_noise(source)
 	audio = r.listen(source)
